@@ -4,7 +4,7 @@ import UserContext from '../context/UserContext'
 function Profile(){
 
     const {user}=useContext(UserContext)
-
+    console.log(typeof(user))
     if (!user) 
         return(
             <>

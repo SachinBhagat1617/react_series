@@ -3,7 +3,8 @@ import UserContext from './UserContext';
 
 
 const UserContextProvider=({children})=>{
-    const[user,setUser]=React.useState(null)
+    //user and setUser ko globally avilable karwana hai
+    const[user,setUser]=React.useState("")
     return(
         <UserContext.Provider value={{user,setUser}}>
         {children}
