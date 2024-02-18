@@ -11,6 +11,7 @@ function App(){
     //setTodos(todo)
     //if you do like this then it will empty the list first and then append todo but you will loose your all prevTodo
     //for this reason you hav got prev parameter from useState
+    //prev hame call back return karta hai isliye prev fn mai hai
 
     setTodos((prev)=>([{id:Date.now(),...todo},...prev]))
   }
